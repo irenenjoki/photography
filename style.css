@@ -1,0 +1,327 @@
+*, *:before, *:after{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Menu Hamburger Animado */
+#check, #tema{
+display: none;
+}
+
+.checkbtn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.hamburger{
+    z-index: 3;
+    display: block;
+    background: #000;
+    width: 30px;
+    height: 2px;
+    position: relative;
+}
+
+.hamburger:before, .hamburger:after{
+    background : #000;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    transition: .2s linear;
+}
+
+.hamburger:before{
+    top: -10px;
+}
+
+.hamburger:after{
+    bottom: -10px;
+}
+
+#check:checked ~ label .hamburger{
+    transform: rotate(45deg);
+    position: fixed;
+}
+
+#check:checked ~ label .hamburger:before{
+    transform: rotate(90deg);
+    top: 0px;
+}
+
+#check:checked ~ label .hamburger:after{
+    transform: rotate(90deg);
+    bottom: 0px;
+}
+
+/* Hamburger Do Modo Dark */
+.burger{
+    background: #fff !important;
+}
+
+.burger:before, .burger:after{
+    background: #fff !important;
+}
+/* Fim */
+
+
+header{
+    background-color: #F0F8FF;
+}
+
+header .social, header .checkbtn{
+    display: inline-block;
+}
+
+header .social{
+    display: flex;
+    padding: 20px 0 20px 20px;
+}
+
+header .social li a{
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+header .social li a:hover{
+    font-size: 30px;
+}
+
+header .checkbtn{
+    float: right;
+    margin-top: -40px;
+}
+
+nav{
+    width: 0;
+    height: 100vh;
+    background-color: #FAF0E6;
+    position: fixed;
+    z-index: 2;
+    transition: .2s linear;
+    overflow: hidden;
+    margin-top: -80px;
+}
+
+#check:checked ~ nav{
+    width: 100%;
+}
+
+nav ul{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav ul li{
+    padding: 15px;
+}
+
+
+nav ul li a{
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #000;
+}
+
+main{
+    background-color: #F0F8FF;
+    padding-bottom: 60px;
+}
+
+main h1{
+    font-family: Playfair Display;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+    font-weight: normal;
+}
+
+main h2{
+    text-align: center;
+    font-family: Roboto;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: normal;
+}
+main h3{
+    text-align: center;
+    font-family: Roboto;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: normal;
+    color: crimson;
+}
+
+main .photos{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .photos img{
+    width: 350px;
+    padding: 15px;
+}
+
+footer{
+    width: 100%;
+    background-color: #B0C4DE;
+    color: #fff;
+    text-align:center;
+}
+
+footer h1{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+footer .frase{
+    display: none;
+}
+
+footer form{
+    padding-top: 35px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+}
+
+footer form input{
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+footer form textarea{
+    border: none;
+}
+
+footer form .botao{
+   background-color: #B0E0E6; 
+   border: none;
+   margin-top: 15px;
+   margin-bottom: 30px;
+   font-size: 18px;
+}
+
+.bio{
+    padding-top: 40px;
+    max-width: 90%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+.pos{
+    position: fixed;
+    top: 80%;
+    left: 94%;
+}
+
+.pos span{
+    font-size: 50px;
+}
+
+@media (max-width: 750px){
+    .pos{
+        left: 80%;
+    }
+}
+
+
+/* Mini */
+@media (max-width: 365px){
+    main .fotos img{
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Versão Desktop */
+@media (min-width: 1000px){
+    .hamburger{
+        display: none;
+    }
+
+    nav{
+        width: 70%;
+        height: 80px;
+        margin-left: 30%;
+        position: static;
+        background-color: #F0F8FF;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 80px;
+    }
+
+    header .social li a{
+        font-size: 30px;
+        padding: 20px;
+    }
+    
+    main h1{
+        font-size: 50px;
+    }
+
+    main h2{
+        margin-top: 20px;
+        font-size: 37px;
+    }
+
+    main .fotos img{
+        width: 350px;
+    }
+    img.photos {
+        border-radius: 50%;
+      }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    footer form{
+        width: 100%;
+    }
+
+
+    footer .frase{
+        display: block;
+        width: 50%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    footer .frase:before, footer .frase:after{
+        content: '"';
+        font-size: 39px;
+        padding: 15px;
+        font-weight: bold;
+    }
+}
