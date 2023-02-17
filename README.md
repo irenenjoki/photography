@@ -1,3 +1,3 @@
-![Screenshot (25)](https://user-images.githubusercontent.com/85219856/219140819-d2b7df39-6e71-4388-a709-ac74b8c5aaec.png)
+![Screenshot (28)](https://user-images.githubusercontent.com/85219856/219729170-ca898060-d25c-4fe3-91b8-490f2cb4dee2.png)
 ### photography 👋
 <a href="https://irenenjoki.github.io/photography/">Demo</a>
