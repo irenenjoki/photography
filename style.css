@@ -157,7 +157,11 @@ main h2{
     font-size: 20px;
     letter-spacing: 4px;
     font-weight: normal;
-}
+    font-weight: 900;
+
+        
+      }
+
 main h3{
     text-align: center;
     font-family: Roboto;
@@ -166,21 +170,41 @@ main h3{
     letter-spacing: 4px;
     font-weight: normal;
     color: crimson;
+    font-weight: 900;
+
 }
 
 main .photos{
     width: 90%;
     margin: 0 auto 0 auto;
     margin-top: 35px;
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-decoration-color: aqua;
 }
 
 main .photos img{
     width: 350px;
     padding: 15px;
 }
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .container img {vertical-align: middle;}
+  
+  .container .content {
+    position: absolute;
+    bottom: 0;
+   
+    color: #0adfdf;
+    width: 100%;
+    padding: 15px;
+  }
 
 footer{
     width: 100%;
